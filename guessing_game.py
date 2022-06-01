@@ -55,7 +55,7 @@ class GuessingGame:
         return self.is_solved
 
     def play(self):
-        while not self.solved:
+        while not self.is_solved:
             guess = input(f"Guess a number between {self.low} and {self.high}: ")
 
             try:
